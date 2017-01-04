@@ -1,0 +1,8 @@
+test:
+  pre: 
+    - echo "-----start test-----"
+  override:
+    - phpunit SampleTest
+  post: 
+    - echo "-----end test-----"
+
