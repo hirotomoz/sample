@@ -13,6 +13,7 @@ class SampleTest extends PHPUnit_Framework_TestCase
      */
     public function aaa()
     {
+        echo "aaa start";
         $Sample = new Sample();
         $this->assertEquals($Sample->helloWorld(), 'hello world!');
     }
@@ -21,6 +22,7 @@ class SampleTest extends PHPUnit_Framework_TestCase
      */
     public function bbb()
     {
+        echo "bbb start";
         $Sample = new Sample();
         $this->assertEquals($Sample->helloWorld(), 'hello world!');
     }
