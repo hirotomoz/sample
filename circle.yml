@@ -4,8 +4,10 @@ test:
   override:
     #- phpunit SampleTest
     # デプロイ
-    - ssh 192.168.33.10 /var/www/ci/sample/deploy.sh
-    - ssh 192.168.33.10 /var/www/ci/sample/test.sh
+    #- ssh 192.168.33.10 /var/www/ci/sample/deploy.sh
+    #- ssh 192.168.33.10 /var/www/ci/sample/test.sh
+    - echo "deploy"
+    - pwd
   post: 
     - echo "-----end test-----"
 
